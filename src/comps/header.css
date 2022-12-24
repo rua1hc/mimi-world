@@ -1,0 +1,24 @@
+.header_iFacebook {
+    padding: 1px;
+    cursor: pointer;
+}
+
+.header__input {
+    background-color: #ebebeb;
+    border-radius: 999px;
+    margin: 2px 8px;
+}
+
+.header__input>input {
+    outline: 0;
+}
+
+
+.header__center .btn {
+    width: 100%;
+}
+
+
+.header__right .btn {
+    background-color: #ebebeb;
+}

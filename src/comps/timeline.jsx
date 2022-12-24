@@ -7,13 +7,13 @@ import {
 
 import Like from "./icons/like";
 
+import "./timeline.css";
 import "react-vertical-timeline-component/style.min.css";
 
 export default class Timeline extends Component {
     render() {
         return (
             <div className="timeline">
-                <span>Timeline</span>
                 <VerticalTimeline>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
