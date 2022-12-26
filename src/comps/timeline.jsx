@@ -13,7 +13,7 @@ import "react-vertical-timeline-component/style.min.css";
 export default class Timeline extends Component {
     render() {
         return (
-            <div className="timeline">
+            <div className="timeline container">
                 <VerticalTimeline>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"

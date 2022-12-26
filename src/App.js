@@ -7,14 +7,16 @@ import "./App.css";
 import "react-toastify/dist/ReactToastify.css";
 
 import Header from "./comps/header";
+import PostSender from "./comps/postSender";
 
 function App() {
     return (
         <React.Fragment>
             <ToastContainer />
 
-            <div className="container-fluid p-0">
-                <Header />
+            <Header />
+            <div className="app__body container-fluid p-0">
+                <PostSender />
                 <Timeline />
             </div>
         </React.Fragment>

@@ -1,0 +1,19 @@
+.post__sender {
+    background-color: white;
+    border: 1px solid red;
+
+    margin: 0 auto;
+    width: 500px;
+}
+
+
+.post__status>input {
+    background-color: #ebebeb;
+    border-radius: 999px;
+    outline: 0;
+    padding: 10px 1rem;
+}
+
+.post__status>input:hover {
+    background-color: #d3d4d5;
+}
