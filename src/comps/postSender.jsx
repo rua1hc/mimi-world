@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 
-import { IconContext } from "react-icons";
-import { SiFacebook } from "react-icons/si";
-import { FaPhotoVideo, FaRegLaughSquint } from "react-icons/fa";
-import { RiVideoChatFill } from "react-icons/ri";
+import { Avatar } from "@material-ui/core";
+// import { IconContext } from "react-icons";
+// import { RiVideoChatFill } from "react-icons/ri";
+// import { FaPhotoVideo, FaRegLaughSquint } from "react-icons/fa";
+import VideocamIcon from "@material-ui/icons/Videocam";
+import PhotoLibraryIcon from "@material-ui/icons/PhotoLibrary";
+import InsertEmoticonIcon from "@material-ui/icons/InsertEmoticon";
 
 import "./postSender.css";
 
@@ -23,12 +26,7 @@ function PostSender() {
         <div className="post__sender py-2">
             <form>
                 <div className="post__status d-flex justify-content-center align-items-center mb-2 px-3">
-                    <IconContext.Provider
-                        value={{ color: "#2e81f4", size: "3rem" }}
-                    >
-                        <SiFacebook className="" />
-                    </IconContext.Provider>
-
+                    <Avatar className="" src="" />
                     <input
                         className="flex-grow-1 border-0 ms-2"
                         type="text"
@@ -38,32 +36,33 @@ function PostSender() {
                     />
                 </div>
 
-                <div className="post__options">
-                    <div className="d-flex justify-content-evenly align-items-center px-2">
-                        <button type="button" className="btn btn-light">
-                            <IconContext.Provider
-                                value={{ size: "1.8rem", color: "red" }}
-                            >
-                                <RiVideoChatFill />
-                            </IconContext.Provider>
-                            <span className="ms-1">Live video</span>
-                        </button>
-                        <button type="button" className="btn btn-light">
-                            <IconContext.Provider
-                                value={{ size: "1.8rem", color: "green" }}
-                            >
-                                <FaPhotoVideo />
-                            </IconContext.Provider>
-                            <span className="ms-1">Photo/video</span>
-                        </button>
-                        <button type="button" className="btn btn-light">
-                            <IconContext.Provider
-                                value={{ size: "1.8rem", color: "orange" }}
-                            >
-                                <FaRegLaughSquint />
-                            </IconContext.Provider>
-                            <span className="ms-1">Feeling/activity</span>
-                        </button>
+                <div className="d-flex justify-content-evenly px-2">
+                    <div className="btn btn-light d-flex justify-content-center align-items-center flex-grow-1">
+                        <VideocamIcon />
+                        <p className="ms-1 my-0">Live video</p>
+                    </div>
+                    <div className="btn btn-light d-flex justify-content-center align-items-center flex-grow-1">
+                        <PhotoLibraryIcon />
+                        <p className="ms-1 my-0">Photo/video</p>
+                    </div>
+                    <div className="btn btn-light d-flex justify-content-center align-items-center flex-grow-1">
+                        <InsertEmoticonIcon />
+                        <p className="ms-1 my-0">Feeling/activity</p>
+                    </div>
+                </div>
+
+                <div className="post__types d-flex justify-content-evenly">
+                    <div className="post__type">
+                        <VideocamIcon />
+                        <p className="m-0">Live video</p>
+                    </div>
+                    <div className="post__type">
+                        <PhotoLibraryIcon />
+                        <p className="m-0">Photo/video</p>
+                    </div>
+                    <div className="post__type">
+                        <InsertEmoticonIcon />
+                        <p className="m-0">Feeling/activity</p>
                     </div>
                 </div>
 
