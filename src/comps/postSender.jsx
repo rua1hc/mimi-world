@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 
 import { Avatar } from "@material-ui/core";
-// import { IconContext } from "react-icons";
-// import { RiVideoChatFill } from "react-icons/ri";
-// import { FaPhotoVideo, FaRegLaughSquint } from "react-icons/fa";
 import VideocamIcon from "@material-ui/icons/Videocam";
 import PhotoLibraryIcon from "@material-ui/icons/PhotoLibrary";
 import InsertEmoticonIcon from "@material-ui/icons/InsertEmoticon";
@@ -23,9 +20,9 @@ function PostSender() {
     };
 
     return (
-        <div className="post__sender py-2">
-            <form>
-                <div className="post__status d-flex justify-content-center align-items-center mb-2 px-3">
+        <div className="postSender">
+            <form className="postSender__form rounded-3 py-1">
+                <div className="postSender__input d-flex justify-content-center align-items-center my-2 px-3">
                     <Avatar className="" src="" />
                     <input
                         className="flex-grow-1 border-0 ms-2"
@@ -36,33 +33,20 @@ function PostSender() {
                     />
                 </div>
 
-                <div className="d-flex justify-content-evenly px-2">
-                    <div className="btn btn-light d-flex justify-content-center align-items-center flex-grow-1">
-                        <VideocamIcon />
-                        <p className="ms-1 my-0">Live video</p>
-                    </div>
-                    <div className="btn btn-light d-flex justify-content-center align-items-center flex-grow-1">
-                        <PhotoLibraryIcon />
-                        <p className="ms-1 my-0">Photo/video</p>
-                    </div>
-                    <div className="btn btn-light d-flex justify-content-center align-items-center flex-grow-1">
-                        <InsertEmoticonIcon />
-                        <p className="ms-1 my-0">Feeling/activity</p>
-                    </div>
-                </div>
+                <div className="postSender__preview"></div>
 
-                <div className="post__types d-flex justify-content-evenly">
-                    <div className="post__type">
+                <div className="postSender__types d-flex justify-content-evenly">
+                    <div className="postSender__type text-danger">
                         <VideocamIcon />
-                        <p className="m-0">Live video</p>
+                        <p className="text-dark m-0">Live video</p>
                     </div>
-                    <div className="post__type">
+                    <div className="postSender__type text-success">
                         <PhotoLibraryIcon />
-                        <p className="m-0">Photo/video</p>
+                        <p className="text-dark m-0">Photo/video</p>
                     </div>
-                    <div className="post__type">
+                    <div className="postSender__type text-warning">
                         <InsertEmoticonIcon />
-                        <p className="m-0">Feeling/activity</p>
+                        <p className="text-dark m-0">Feeling/activity</p>
                     </div>
                 </div>
 

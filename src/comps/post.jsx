@@ -11,7 +11,7 @@ import "./post.css";
 
 function Post({ userName, userAvatar, timestamp, caption, image }) {
     return (
-        <div className="post">
+        <div className="post m-3">
             <div className="post__top">
                 <Avatar className="post__avatar" src={userAvatar} />
                 <div className="post__info">

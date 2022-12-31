@@ -6,6 +6,7 @@ import {
 } from "react-vertical-timeline-component";
 
 import Like from "./icons/like";
+import Post from "./post";
 
 import "./timeline.css";
 import "react-vertical-timeline-component/style.min.css";
@@ -13,10 +14,10 @@ import "react-vertical-timeline-component/style.min.css";
 export default class Timeline extends Component {
     render() {
         return (
-            <div className="timeline container">
+            <div className="timeline mt-3 pb-3">
                 <VerticalTimeline>
                     <VerticalTimelineElement
-                        className="vertical-timeline-element--work"
+                        className="vertical-timeline-element--work mx-0"
                         contentStyle={{
                             background: "rgb(33, 150, 243)",
                             color: "#fff",
@@ -42,6 +43,7 @@ export default class Timeline extends Component {
                             Project Management, Team Leading
                         </p>
                     </VerticalTimelineElement>
+
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
                         date="2010 - 2011"
@@ -51,17 +53,9 @@ export default class Timeline extends Component {
                         }}
                         icon={<Like />}
                     >
-                        <h3 className="vertical-timeline-element-title">
-                            Art Director
-                        </h3>
-                        <h4 className="vertical-timeline-element-subtitle">
-                            San Francisco, CA
-                        </h4>
-                        <p>
-                            Creative Direction, User Experience, Visual Design,
-                            SEO, Online Marketing
-                        </p>
+                        <Post userName="rua1hc" />
                     </VerticalTimelineElement>
+
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
                         date="2008 - 2010"
@@ -158,6 +152,7 @@ export default class Timeline extends Component {
                         icon={<Like />}
                     />
                 </VerticalTimeline>
+                <Post userName="timeline__footer" />
             </div>
         );
     }
