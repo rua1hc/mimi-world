@@ -21,11 +21,11 @@ function PostSender() {
 
     return (
         <div className="postSender">
-            <form className="postSender__form rounded-3 py-1">
-                <div className="postSender__input d-flex justify-content-center align-items-center my-2 px-3">
+            <form className="postSender__form rounded-3 px-3 pt-3 pb-1">
+                <div className="postSender__input d-flex justify-content-center align-items-center">
                     <Avatar className="" src="" />
                     <input
-                        className="flex-grow-1 border-0 ms-2"
+                        className="flex-grow-1 rounded-pill border-0 ms-2"
                         type="text"
                         placeholder="What's on your mind?"
                         value={caption}
@@ -33,20 +33,33 @@ function PostSender() {
                     />
                 </div>
 
-                <div className="postSender__preview"></div>
+                <div className="postSender__preview py-1">
+                    postSender__preview
+                </div>
 
                 <div className="postSender__types d-flex justify-content-evenly">
-                    <div className="postSender__type text-danger">
-                        <VideocamIcon />
-                        <p className="text-dark m-0">Live video</p>
+                    <div className="postSender__type rounded-3">
+                        <VideocamIcon
+                            className="postSender__icon p-0"
+                            style={{ color: "red" }}
+                            fontSize="large"
+                        />
+                        <p className="ms-1 my-0">Live video</p>
                     </div>
-                    <div className="postSender__type text-success">
-                        <PhotoLibraryIcon />
-                        <p className="text-dark m-0">Photo/video</p>
+                    <div className="postSender__type rounded-3">
+                        <PhotoLibraryIcon
+                            className="postSender__icon"
+                            style={{ color: "limegreen" }}
+                            fontSize="large"
+                        />
+                        <p className="ms-1 my-0">Photo/video</p>
                     </div>
-                    <div className="postSender__type text-warning">
-                        <InsertEmoticonIcon />
-                        <p className="text-dark m-0">Feeling/activity</p>
+                    <div className="postSender__type rounded-3 text-warning">
+                        <InsertEmoticonIcon
+                            className="postSender__icon"
+                            fontSize="large"
+                        />
+                        <p className="text-dark ms-1 my-0">Feeling/activity</p>
                     </div>
                 </div>
 

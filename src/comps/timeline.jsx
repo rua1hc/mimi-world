@@ -23,7 +23,7 @@ export default class Timeline extends Component {
                             color: "#fff",
                         }}
                         contentArrowStyle={{
-                            borderRight: "7px solid  rgb(33, 150, 243)",
+                            borderRight: "7px solid rgb(33, 150, 243)",
                         }}
                         date="2011 - present"
                         iconStyle={{
@@ -46,50 +46,22 @@ export default class Timeline extends Component {
 
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
+                        contentStyle={{
+                            background: "rgb(33, 150, 243)",
+                        }}
                         date="2010 - 2011"
                         iconStyle={{
                             background: "rgb(33, 150, 243)",
-                            color: "#fff",
+                            color: "gray",
                         }}
                         icon={<Like />}
                     >
-                        <Post userName="rua1hc" />
+                        <Post
+                            userName="rua1hc"
+                            image="https://scontent.fdad3-1.fna.fbcdn.net/v/t39.30808-6/322598553_691307885768534_7665704516941822530_n.jpg?stp=dst-jpg_p843x403&_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=9Emr-Rbu5gsAX81G-NP&_nc_ht=scontent.fdad3-1.fna&oh=00_AfC4Pgh4jBpI61ksJH6ab90a3zSz7P5tMNNFMkyNeJH37w&oe=63B6F8CB"
+                        />
                     </VerticalTimelineElement>
 
-                    <VerticalTimelineElement
-                        className="vertical-timeline-element--work"
-                        date="2008 - 2010"
-                        iconStyle={{
-                            background: "rgb(33, 150, 243)",
-                            color: "#fff",
-                        }}
-                        icon={<Like />}
-                    >
-                        <h3 className="vertical-timeline-element-title">
-                            Web Designer
-                        </h3>
-                        <h4 className="vertical-timeline-element-subtitle">
-                            Los Angeles, CA
-                        </h4>
-                        <p>User Experience, Visual Design</p>
-                    </VerticalTimelineElement>
-                    <VerticalTimelineElement
-                        className="vertical-timeline-element--work"
-                        date="2006 - 2008"
-                        iconStyle={{
-                            background: "rgb(33, 150, 243)",
-                            color: "#fff",
-                        }}
-                        icon={<Like />}
-                    >
-                        <h3 className="vertical-timeline-element-title">
-                            Web Designer
-                        </h3>
-                        <h4 className="vertical-timeline-element-subtitle">
-                            San Francisco, CA
-                        </h4>
-                        <p>User Experience, Visual Design</p>
-                    </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--education"
                         date="April 2013"
@@ -127,27 +99,9 @@ export default class Timeline extends Component {
                         </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
-                        className="vertical-timeline-element--education"
-                        date="2002 - 2006"
                         iconStyle={{
-                            background: "rgb(233, 30, 99)",
-                            color: "#fff",
-                        }}
-                        icon={<Like />}
-                    >
-                        <h3 className="vertical-timeline-element-title">
-                            Bachelor of Science in Interactive Digital Media
-                            Visual Imaging
-                        </h3>
-                        <h4 className="vertical-timeline-element-subtitle">
-                            Bachelor Degree
-                        </h4>
-                        <p>Creative Direction, Visual Design</p>
-                    </VerticalTimelineElement>
-                    <VerticalTimelineElement
-                        iconStyle={{
-                            background: "rgb(16, 204, 82)",
-                            color: "#fff",
+                            background: "limegreen",
+                            color: "red",
                         }}
                         icon={<Like />}
                     />
