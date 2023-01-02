@@ -1,3 +1,17 @@
+:root {
+    --color-test: #ffffff;
+
+    --color-active: #2E89FF;
+    --color-active-bold: #1876F2;
+
+    --color-bg-primary: #F0F2F5;
+
+    --color-btn-primary: #F0F2F5;
+    --color-btn-lighter: #E4E6EB;
+    --color-btn-light: #D3D4D5;
+}
+
+
 * {
     margin: 0;
 }
@@ -14,3 +28,8 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
         monospace;
 }
+
+/* @ */
+/* .header__icon {
+    vertical-align: bottom;
+} */

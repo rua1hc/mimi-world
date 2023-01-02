@@ -1,0 +1,46 @@
+.navibar {
+    box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    position: sticky;
+    background-color: white;
+
+    padding: 5px 0;
+}
+
+
+/* .navbar__iFacebook {
+    padding: 2px;
+    cursor: pointer;
+} */
+
+.navbar__input {
+    background-color: var(--color-bg-primary);
+    margin: 3px 8px;
+}
+
+.navbar__input>input {
+    outline: 0;
+}
+
+
+/* .navbar__center {
+    margin: 0 5rem 0 0;
+} */
+
+.navbar__center .btn {
+    width: 100%;
+}
+
+
+.navbar__right .notifier {
+    color: black;
+    background-color: var(--color-btn-lighter);
+    margin: 0 4px;
+    padding: 10px;
+}
+
+.navbar__right .notifier:hover {
+    background-color: var(--color-btn-light);
+}
